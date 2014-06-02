@@ -24,7 +24,7 @@ __CRP const unsigned int CRP_WORD = CRP_NO_CRP;
 
 int main(void) {
   // Select 12MHz crystal oscillator
-  LPC_SC ->CLKSRCSEL = 0;
+  LPC_SC ->CLKSRCSEL = 1;
 
   // Bypass PLL 0
   PLL_bypass();
